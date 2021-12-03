@@ -11,13 +11,27 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
-  <title>cards</title>
+  <title>REPOSTERÍA</title>
 </head>
-
+<!-- Coloca este fragmento justo antes del </body> -->
+<!--
+<script>
+  var nav = responsiveNav("navbar", { // Selector
+    animate: true, // Boolean: Use CSS3 transitions, true or false
+    transition: 250, // Integer: Speed of the transition, in milliseconds
+    label: "Menu", // String: Label for the navigation toggle
+    insert: "after", // String: Insert the toggle before or after the navigation
+    customToggle: "", // Selector: Specify the ID of a custom toggle
+    openPos: "relative", // String: Position of the opened nav, relative or static
+    jsClass: "js", // String: 'JS enabled' class which is added to <html> el
+    init: function () { }, // Function: Init callback
+    open: function () { }, // Function: Open callback
+    close: function () { } // Function: Close callback
+  });
+</script>-->
 <body>
   <!--inicia navbar-->
-
-  <div class="container-fluid fixed-top" style="background-color: #030100;">
+  <div class="container-fluid sticky-top" style="background-color: #030100;">
     <nav class="navbar navbar-expand-md navbar navbar-dark container" style="background-color: #030100;">
       <div class="container-fluid">
         <a class="navbar-brand text-light" href="practicaEquipo.html">
@@ -27,45 +41,45 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto mb-5 mb-lg-0 mr-5">
             <li class="nav-item">
               <a class="nav-link text-light active text-center " aria-current="page"
-                href="practicaEquipo.html">INICIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light text-center" href="#">REGISTRARSE</a>
+                href="index.html"><strong>INICIO</strong> </a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link text-light dropdown-toggle text-center" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                VER MÁS INFORMACIÓN
+                data-bs-toggle="dropdown" aria-expanded="false"> 
+                <strong>VER MÁS INFORMACIÓN</strong>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">MÁS RECETAS</a></li>
-                <li><a class="dropdown-item" href="consejos.html">CONSEJOS PARA PREPARAR UN BUEN POSTRE</a></li>
-                <li>
+                <li><a class="dropdown-item text-center nav-link:hover: bg-light" href="#"><strong>MÁS RECETAS</strong></a></li>
+                <li><a class="dropdown-item text-center nav-link:hover: bg-light" href="consejos.html"><strong>CONSEJOS DE COMIDA</strong></a></li>
+                <li><a class="nav-link text-dark text-center ml-5 nav-link:hover: bg-light" href="regit.html"><strong>INICIAR SESIÓN</strong></a>
+                </li>
+                <!-- <li>
                   <hr class="dropdown-divider">
+                  <li class="nav-item">
+                    <a class="nav-link text-light text-center ml-5" href="regit.html"></a>
+                  </li> -->
               </ul>
             </li>
+            <li class="navbar-text text-white text-center">
+              <img src="Imagenes/10.png" alt="" height="25" width="25">
+              <strong>+741 146 0545</strong>
+            </li>
           </ul>
-          <span class="navbar-text text-white text-center">
-            <img src="Imagenes/10.png" alt="" height="25" width="25">
-            +741 146 0545
-          </span>
-          <!--
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--
           <div class="input-group">
             <div class="input-group-text" id="btnGroupAddon">Buscar</div>
             <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="btnGroupAddon">
           </div>
         </div>
 -->
-        </div>
-      </div>
-    </nav>
-  </div>
-
   <!--fin navbar-->
 
   <!--inicio de carousel-->
@@ -95,7 +109,7 @@
         <img src="Imagenes/img10.jpeg" class="d-block w-100" alt="..." width="500" height="500">
       </div>
       <div class="carousel-item">
-        <img src="Imagenes/img12.jpeg" class="d-block w-100" alt="..." width="500" height="500">
+        <img src="Imagenes/img13.jpeg" class="d-block w-100" alt="..." width="500" height="500">
       </div>
       <div class="carousel-item">
         <img src="Imagenes/8.jpg" class="d-block w-100" alt="..." width="500" height="500">
@@ -187,7 +201,7 @@
             <img src="Imagenes/4.png" class="card-img-top rounded-pill" alt="..." width="300" height="350">
             <div class="card-body">
               <h5 class="card-title">Copa de mandarina y frambuesas</h5>
-              <a href="#" class="btn btn-outline-warning  text-center text-dark" data-bs-toggle="modal"
+              <a href="#" class="btn btn-outline-warning  text-center text-dark " data-bs-toggle="modal"
                 data-bs-target="#Modal_6">Modo de
                 preparación</a>
             </div>
@@ -287,8 +301,6 @@
     </div>
   </div>
   <!-- Fin de Modal -->
-
-
   <!-- Modal 2-->
   <!--id cambia el nombre de acuerdo lo que se realiza-->
   <div class="modal fade" id="Modal_dona" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -649,13 +661,11 @@
         </div>
         <div class="modal-footer" style="background-color: #1BD13F;">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-
         </div>
       </div>
     </div>
   </div>
   <!-- Fin de Modal -->
-
   <!-- Modal 5-->
   <!--id cambia el nombre de acuerdo lo que se realiza-->
   <div class="modal fade" id="Modal_5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -885,8 +895,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>
